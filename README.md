@@ -18,7 +18,7 @@ You can stub out your dependencies with `__set__`
 ```javascript
 myModule = require('rewire!./module.js');
 myModule.__set__('someDependency', mockDependency);
-myModule(); // returns mockDeppendency
+myModule(); // returns mockDependency
 ```
 
 You can also get values with `__get__`
