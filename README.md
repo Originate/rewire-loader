@@ -1,4 +1,4 @@
-# rewire-loader
+# rewire-loader [![CircleCI](https://circleci.com/gh/Originate/rewire-loader.svg?style=svg)](https://circleci.com/gh/Originate/rewire-loader)
 
 Adds [rewire](https://github.com/jhnns/rewire)-like bindings to a webpack loader. Works well with [mocha-webpack](https://github.com/zinserjan/mocha-webpack)
 
