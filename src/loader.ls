@@ -12,8 +12,8 @@ function __set__ var-name, value
 
 function __get__ var-name
   switch
-  | not var-name?                => throw Error '__set__: variable name is required'
-  | typeof var-name isnt \string => throw Error '__set__: variable name must be a string'
+  | not var-name?                => throw Error '__get__: variable name is required'
+  | typeof var-name isnt \string => throw Error '__get__: variable name must be a string'
   eval(var-name)
 
 
