@@ -37,5 +37,5 @@ describe '__get__' ->
 
       specify 'throws an error' ->
         expect ->
-          require "..?get-cache-bust!./fixtures/#{type}"
+          require "..!./fixtures/#{type}"
         .to.throw /rewire-loader can only be used on modules that export an object or function/

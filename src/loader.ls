@@ -24,6 +24,7 @@ module.exports = (src) ->
   #{src}
 
   /* rewire-loader injection */
+  delete require.cache[module.id];
   (#{__check_type__})(module.exports);
   module.exports.__set__ = #{__set__};
   module.exports.__get__ = #{__get__};
