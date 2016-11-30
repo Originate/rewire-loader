@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/loader.js",
   "scripts": {
-    "build": "lsc --print -c src | uglifyjs > lib/loader.js",
+    "build": "mkdir -p lib && lsc --print -c src | uglifyjs > lib/loader.js",
     "test": "npm run build && mocha-webpack --webpack-config test/webpack.config.ls 'test/*'"
   },
   "files": [
