@@ -1,0 +1,36 @@
+{
+  "name": "rewire-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/loader.js",
+  "scripts": {
+    "build": "lsc --print -c src | uglifyjs > lib/loader.js",
+    "test": "npm run build && mocha-webpack --webpack-config test/webpack.config.ls 'test/*'"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Originate/rewire-loader.git"
+  },
+  "author": "Originate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Originate/rewire-loader/issues"
+  },
+  "homepage": "https://github.com/Originate/rewire-loader#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.11.1",
+    "livescript": "^1.5.0",
+    "livescript-loader": "^0.1.6",
+    "mocha": "^3.2.0",
+    "mocha-webpack": "^0.7.0",
+    "webpack": "^1.13.3",
+    "webpack-node-externals": "^1.5.4"
+  }
+}
